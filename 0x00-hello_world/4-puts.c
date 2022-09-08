@@ -1,10 +1,9 @@
 #include <stdio.h>
-/*
+/**
+ *Descriptio: prints "Programming is like building a multilingual puzzle"
+ *Return: always (0) 
  *
- * Description: print "programming is like building a multilingual puzzle"
- * 
- * always return 0
- */
+ * /
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
