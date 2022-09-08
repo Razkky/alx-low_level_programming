@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*main - Entry point
+/*
+ * main - Entry point
  *
  * Description: print "programming is like building a multilingual puzzle"
  * 
