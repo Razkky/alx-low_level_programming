@@ -10,40 +10,40 @@
 
 void jack_bauer(void)
 {
-	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
+	int hoursTens, hoursOones, minutesTens, minutesOnes, hoursMax;
 
-	hours_max = 58;
-	hours_tens = '0';
-	while (hours_tens < '3')
+	hoursMax = 58;
+	hoursTens = '0';
+	while (hoursTens < '3')
 	{
-		if (hours_tens == '2')
+		if (hoursTens == '2')
 		{
-			hours_max = '4';
+			hoursMax = '4';
 		}
-		hours_ones = '0';
-		while (hours_ones < hours_max)
+		hoursOnes = '0';
+		while (hoursOnes < hoursMax)
 		{
-			minutes_tens = '0';
-			while (minutes_tens < '6')
+			minutesTens = '0';
+			while (minutesTens < '6')
 			{
-				minutes_ones = '0';
-				while (minutes_ones < 58)
+				minutesOnes = '0';
+				while (minutesOnes < 58)
 				{
-					_putchar(hours_tens);
-					_putchar(hours_ones);
+					_putchar(hourTens);
+					_putchar(hoursOnes);
 					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
+					_putchar(minutesTens);
+					_putchar(minutesOnes);
 					_putchar('\n');
-					minutes_ones++;
+					minutesOnes++;
 				}
-				minutes_ones = '0';
-				minutes_tens++;
+				minutesOnes = '0';
+				minutesTens++;
 			}
-			minutes_tens = '0';
-			hours_ones++;
+			minutesTens = '0';
+			hoursOnes++;
 		}
-		hours_ones = '0';
-		hours_tens++;
+		hoursOnes = '0';
+		hoursTens++;
 	}
 }
