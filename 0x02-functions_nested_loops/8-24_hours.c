@@ -28,10 +28,13 @@ void jack_bauer(void)
 					_putchar('\n');
 					minutesOnes++;
 				}
+				minutesOnes = 0;
 				minutesTens++;
 			}
+			minutesTens = 0;
 			hoursOnes++;
 		}
+		hoursOnes = 0;
 		hoursTens++;
 	}
 }
