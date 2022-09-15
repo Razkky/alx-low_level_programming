@@ -7,7 +7,7 @@
 void more_numbers(void)
 {
 	int i, j, k, l, count;
-	
+
 	j = 0;
 	k = '0';
 	l = '1';
