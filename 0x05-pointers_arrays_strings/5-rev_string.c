@@ -1,10 +1,14 @@
 #include <string.h>
 #include "main.h"
+/**
+ * rev_string - print reverse string
+ * @s: string to be printed
+ */
 
 void rev_string(char *s)
 {
-	char q[10], c;
 	int i, j;
+	char q[10000], c;
 
 	j = strlen(s);
 
