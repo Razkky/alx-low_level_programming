@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - update value of the argument
- * @*n: value to be updated
+ * @n: value to be updated
  */
 
 void reset_to_98(int *n)
