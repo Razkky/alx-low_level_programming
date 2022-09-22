@@ -16,11 +16,11 @@ char *_strncat(char *dest, char *src, int n)
 	;
 	for (; *src != '\0'; src++)
 	{
+		*pointer = *src;
+		n--;
 		if (n == 0)
 			break;
-		*pointer = *src;
 		pointer++;
-		n--;
 	}
 	*pointer = *src;
 	return (dest);
