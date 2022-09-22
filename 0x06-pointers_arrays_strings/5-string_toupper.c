@@ -1,6 +1,8 @@
 /**
  * string_toupper - change string to upper case
  * @a: inputed string
+ *
+ * Return: string in upper case
  */
 
 char *string_toupper(char *a)
