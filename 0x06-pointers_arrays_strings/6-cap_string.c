@@ -10,6 +10,7 @@ char *cap_string(char *a)
 	int n, k;
 	char c;
 	char *separators = " ,;.!?\"(){}\n\t\0";
+
 	n = 0;
 	for (; *(a + n) != '\0'; n++)
 	{
