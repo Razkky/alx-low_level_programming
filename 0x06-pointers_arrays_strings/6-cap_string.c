@@ -7,19 +7,22 @@
 
 char *cap_string(char *a)
 {
-	int n;
+	int n, k;
 	char c;
-
+	char *separators = " ,;.!?\"(){}\n\t\0";
 	n = 0;
 	for (; *(a + n) != '\0'; n++)
 	{
-		if (n == 0 || *(a + n - 1) == 32)
+		for (k = 0; *(separators + k) != '\0'; k++)
 		{
-			if (*(a + n) > 96 && *(a + n) < 123)
+			if (n == 0 || *(a + n - 1) == *(separators + k))
 			{
-				c = *(a + n);
-				c = c - 32;
-				*(a + n) = c;
+				if (*(a + n) > 96 && *(a + n) < 123)
+				{
+					c = *(a + n);
+					c = c - 32;
+					*(a + n) = c;
+				}
 			}
 		}
 	}
