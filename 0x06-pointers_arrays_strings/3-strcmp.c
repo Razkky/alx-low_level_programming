@@ -10,11 +10,13 @@ int _strcmp(char *s1, char *s2)
 {
 	int i, answer;
 
-	for (; *s1 + i != '\n'; i++)
+	i = 0;
+	while (*(s1 + i) != '\0' || *(s2 + i) != '\0')
 	{
-		answer = (*s1 + i) - (*s2 + i);
+		answer = *(s1 + i) - *(s2 + i);
 		if (answer != 0)
 			return (answer);
+		i++;
 	}
 	return (0);
 }
