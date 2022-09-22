@@ -7,17 +7,18 @@
 
 char *leet(char *a)
 {
-	char *replace = "4433007711\0";
-	char *change = "aAeEoOtTLl\0";
-	int i, k;
+	int i, x;
+	char change[] = "aAeEoOtTlL";
+	char replace[] = "4433007711";
 
 	for (i = 0; *(a + i) != '\0'; i++)
 	{
-		for (k = 0; *(change + k) != '\0'; k++)
-		{
-			if (*(a + i) == *(change + k))
-			       *(a + i) = *(replace + k);
-		}
+		for (x = 0; change[x]; x++)
+			if (change[x] == *(a + i))
+			{
+				*(a + i) = replace[x];
+				break;
+			}
 	}
 	return (a);
-}	
+}
