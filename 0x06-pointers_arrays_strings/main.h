@@ -6,3 +6,4 @@ char *_strncat(char *dest, char *src, int n);
 char *string_toupper(char *a);
 char *cap_string(char *a);
 char *leet(char *a);
+void print_number(int n);
