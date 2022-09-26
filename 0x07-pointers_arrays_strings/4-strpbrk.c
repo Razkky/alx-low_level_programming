@@ -1,6 +1,6 @@
 #define NULL 0
 /**
- * _strpbrk - locates first occarrnece in string s of any bytes of string accept
+ * _strpbrk - locates first occarrnece of charin string s o
  * @s: main string
  * @accept: second string
  *
