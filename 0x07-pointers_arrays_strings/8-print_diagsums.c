@@ -8,7 +8,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i, start, end, right_sum, left_sum;
-	
+
 	start  = 0;
 	right_sum = 0;
 	end = 0;
@@ -25,9 +25,9 @@ void print_diagsums(int *a, int size)
 			right_sum = right_sum + *(a + start);
 		}
 	}
-	for ( i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		end = end + size -1;
+		end = end + size - 1;
 		left_sum = left_sum + *(a + end);
 	}
 	printf("%d, %d\n", right_sum, left_sum);
