@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print number of arguement 
+ * main - print number of arguement
  * @argc: number of arguement
  * @argv: value of arguement
  *
@@ -8,6 +8,6 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	printf("%d\n", argc-1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
