@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - print name of program
  * @argc: number of argument
@@ -9,14 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	char *s = argv[0];
-	int i = 0;
-
-	while (*(s + i) != '\0')
-	{
-		_putchar(*(s + i));
-		i++;
-	}
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 	return (0);
 }
