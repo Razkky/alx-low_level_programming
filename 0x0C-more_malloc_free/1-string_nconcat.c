@@ -38,7 +38,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= length2)
 		length3 = length1 + length2 + 1;
 	else
+	{
 		length3 = length1 + n + 1;
+		length2 = n;
+	}
 	pointer = malloc(length3 * sizeof(char));
 	if (pointer == NULL)
 		return (NULL);
@@ -49,7 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while (j < n)
+	while (j < length2)
 	{
 		pointer[i + j] = s2[j];
 		j++;
