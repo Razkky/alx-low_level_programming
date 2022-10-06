@@ -7,7 +7,7 @@
  */
 int check_length(char *s)
 {
-	unsigned int length, i = 0;
+	unsigned int length = 0, i = 0;
 
 	while (*(s + i) != '\0')
 	{
