@@ -7,8 +7,8 @@
  */
 int check_length(char *s)
 {
-	unsigned int length, i =0;
-	
+	unsigned int length, i = 0;
+
 	while (*(s + i) != '\0')
 	{
 		length++;
@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (pointer == NULL)
 		return (NULL);
 	i = 0;
-	while (*(s1 + i) != '\0')
+	while (i < length1)
 	{
 		pointer[i] = s1[i];
 		i++;
