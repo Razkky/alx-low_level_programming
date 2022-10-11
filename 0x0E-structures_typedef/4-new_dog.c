@@ -41,20 +41,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	newDog_name = store_copy(name);
 	if (newDog_name == NULL)
-	{
-		free(newDog_name);
 		return (NULL);
-	}
 	newDog_owner = store_copy(owner);
 	if (newDog_owner == NULL)
 	{
-		free(newDog_owner);
+		free(newDog_name);
 		return (NULL);
 	}
 	newDog = malloc(sizeof(dog_t));
 	if (newDog == NULL)
 	{
-		free(newDog);
+		free(newDog_name);
+		free(newDog_owner);
 		return (NULL);
 	}
 	newDog->name = newDog_name;
