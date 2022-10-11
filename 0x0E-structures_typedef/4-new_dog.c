@@ -18,7 +18,7 @@ char *store_copy(char *original)
 		length++;
 		i++;
 	}
-	copy = malloc(length);
+	copy = malloc(length * sizeof(char) + 1);
 	if (copy == NULL)
 		return (NULL);
 	copy = original;
