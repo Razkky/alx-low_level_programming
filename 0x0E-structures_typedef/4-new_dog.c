@@ -13,15 +13,18 @@ char *store_copy(char *original)
 
 	if (original == NULL)
 		return (NULL);
-	while (*(original + i) != '\0')
+	while (*(original + length) != '\0')
 	{
 		length++;
-		i++;
 	}
 	copy = malloc(length * sizeof(char) + 1);
 	if (copy == NULL)
 		return (NULL);
-	copy = original;
+	for (; i  < length; i++)
+	{
+		copy[i] = original[i];
+	}
+	copy[i] = '\0';
 	return (copy);
 }
 /**
