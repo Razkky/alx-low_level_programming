@@ -4,10 +4,10 @@
  * struct dog - new type struct dog
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+};Dog
 #endif /* !DOG */
