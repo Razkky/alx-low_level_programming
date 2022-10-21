@@ -2,6 +2,7 @@
 #define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 typedef struct list list_t;
 
@@ -10,6 +11,7 @@ typedef struct list {
 	size_t len;
 	list_t *next;
 } list_t;
+int _putchar(char c);
 size_t print_list(const list_t *h);
 
 #endif /* LISTS_H */
