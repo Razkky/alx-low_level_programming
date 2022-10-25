@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_listint - free malloc allocated space to list
+ * free_listint2 - free malloc allocated space to list
  * @head: pointer to head of a list
  */
 
