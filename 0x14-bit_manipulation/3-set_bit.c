@@ -15,8 +15,10 @@ int set_bit(unsigned long int *n, unsigned int index)
 	for (; i < 64; i++)
 	{
 		if (i == index)
+		{
 			*n |= shifted;
-		return (1);
+			return (1);
+		}
 	}
 	return (-1);
 }
