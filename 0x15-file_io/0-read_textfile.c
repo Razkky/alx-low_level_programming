@@ -8,7 +8,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, check;
+	int fd, check, readNo;
 	char  *buff;
 
 	if (filename == NULL)
@@ -25,18 +25,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buff);
 		return (0);
 	}
-	check = read(fd, buff, letters);
-	if (check == 0)
+	readNo = read(fd, buff, letters);
+	if (readNo == 0)
 	{
 		free(buff);
 		return (0);
 	}
-	check = write(POSIX, buff, letters);
+	check = write(POSIX, buff, readNo);
 	if (check == -1)
 	{
 		free(buff);
 		return (0);
 	}
 	free(buff);
-	return (letters);
+	return (check);
 }
