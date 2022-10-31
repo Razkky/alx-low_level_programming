@@ -20,19 +20,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
-	{
-		free(buff);
-		return (0);
-	}
 	readNo = read(fd, buff, letters);
-	if (readNo == 0)
-	{
-		free(buff);
-		return (0);
-	}
 	check = write(POSIX, buff, readNo);
-	if (check == -1)
+	if (fd == - 1 || readNo == - 1 || check == - 1 || check != readNo)
 	{
 		free(buff);
 		return (0);
