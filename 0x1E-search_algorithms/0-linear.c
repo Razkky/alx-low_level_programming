@@ -2,7 +2,7 @@
 /**
  * linear_search - search for a data using linear search algorithm
  * @size: size of array
- * @value: value to search for 
+ * @value: value to search for
  * @array: pointer to an array
  * Return: Index of value or -1 if not found
  */
